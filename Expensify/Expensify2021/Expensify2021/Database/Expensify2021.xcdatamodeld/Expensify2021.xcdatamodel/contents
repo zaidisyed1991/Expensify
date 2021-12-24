@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19197" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CurrentUser" representedClassName="CurrentUser" syncable="YES" codeGenerationType="class">
+        <attribute name="is_manager" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="reciept" optional="YES" attributeType="Binary"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="total" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="expenses" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="is_manager" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="user" inverseEntity="Expense"/>
+        <relationship name="workforce" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WorkForce" inverseName="users" inverseEntity="WorkForce"/>
+    </entity>
+    <entity name="WorkForce" representedClassName="WorkForce" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="users" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="workforce" inverseEntity="User"/>
+    </entity>
+    <elements>
+        <element name="Expense" positionX="-494.09033203125" positionY="517.7192687988281" width="128" height="119"/>
+        <element name="User" positionX="-951.52978515625" positionY="130.8521423339844" width="128" height="104"/>
+        <element name="WorkForce" positionX="-1294.832275390625" positionY="-202.4713439941406" width="128" height="59"/>
+        <element name="CurrentUser" positionX="-1460.020751953125" positionY="385.6251068115234" width="128" height="73"/>
+    </elements>
+</model>
