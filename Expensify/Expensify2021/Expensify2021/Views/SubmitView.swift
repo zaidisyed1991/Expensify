@@ -2,7 +2,6 @@
 //  SubmitView.swift
 //  SubmitView
 //
-//  Created by Ryan on 11/21/21.
 //
 
 import Firebase
