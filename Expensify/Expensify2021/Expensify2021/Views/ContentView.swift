@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  ContentView
 //
-//  Created by Ryan on 11/24/21.
 //
 import SwiftUI
 import Foundation
