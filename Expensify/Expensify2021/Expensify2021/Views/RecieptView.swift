@@ -2,7 +2,6 @@
 //  RecieptView.swift
 //  RecieptView
 //
-//  Created by Ryan on 11/19/21.
 //
 
 import Foundation
