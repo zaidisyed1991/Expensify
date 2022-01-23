@@ -2,7 +2,6 @@
 //  User.swift
 //  Expensify2021
 //
-//  Created by Syed on 27/11/2021.
 //
 
 import Firebase
