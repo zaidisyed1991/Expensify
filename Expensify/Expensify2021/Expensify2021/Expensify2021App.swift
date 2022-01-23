@@ -2,7 +2,6 @@
 //  Expensify2021App.swift
 //  Expensify2021
 //
-//  Created by Ryan on 11/15/21.
 //
 
 import SwiftUI
