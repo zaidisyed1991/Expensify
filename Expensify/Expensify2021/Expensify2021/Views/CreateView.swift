@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  Final Project
 //
-//  Created by Ryan on 11/18/21.
 //
 
 import SwiftUI
